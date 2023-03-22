@@ -15,8 +15,6 @@ const projectList = [
         backgroundImage:
             "https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg",
         frontImage: "https://i.postimg.cc/SsZmn7Kg/covidtracker.png" ,
-        github:"https://github.com/jadesolaadeagbo/BootcampMasterfolio",
-        preview:""
     },
     {
         id: 2,
@@ -25,18 +23,22 @@ const projectList = [
         backgroundImage:
             "https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?size=626&ext=jpg&ga=GA1.2.2102900112.1628985600",
         frontImage: "https://i.postimg.cc/2jqm50Mq/loruki.png",
-        github:"https://github.com/jadesolaadeagbo/Loruki--",
-        preview:"http://loruki-murex.vercel.app/"
     },
     {
         id: 3,
         title: "Spotify Clone",
-        technologies: ["React JS", "Node JS", "Bootstrap"],
+        technologies: ["React JS", "Node JS", ""],
         backgroundImage:
             "https://media.istockphoto.com/vectors/abstract-purple-vector-background-with-stripes-vector-id972475894?k=6&m=972475894&s=612x612&w=0&h=99AirGMOb64N2-1ZSMYRjEBp2USrAdzXUGzQMh5o6Js=",
         frontImage: "https://i.postimg.cc/Ls5LNv7N/spotify-clone.png",
-        github:"https://github.com/jadesolaadeagbo/dependency-track",
-        preview:""
+    },
+    {
+        id: 4,
+        title: "Votechain App",
+        technologies: ["Next JS", "Node JS", "Solidity"],
+        backgroundImage:
+            "https://media.istockphoto.com/vectors/abstract-purple-vector-background-with-stripes-vector-id972475894?k=6&m=972475894&s=612x612&w=0&h=99AirGMOb64N2-1ZSMYRjEBp2USrAdzXUGzQMh5o6Js=",
+        frontImage: "https://i.postimg.cc/zX9RQT8m/votechain.png",
     },
 ];
 
