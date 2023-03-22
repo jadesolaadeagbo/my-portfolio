@@ -47,7 +47,7 @@ const Home = () => {
                     , {t("home_i")}
                 </Typography>
                 <motion.div animate={controls} custom={1}>
-                    <h1 style={{color:"#cc2b5e"}}>JADESOLA ADEAGBO</h1>
+                    <h1 style={{color:"white"}}>JADESOLA ADEAGBO</h1>
                     {/* <VideoLogo /> */}
                 </motion.div>
                 <Typography

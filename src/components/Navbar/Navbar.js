@@ -57,7 +57,7 @@ const Navbar = () => {
                     }}
                 >
 
-                    <p setHomeIsActive={setHomeIsActive}  style={{border:'1px solid #9E7777', color:'#9E7777', padding: '10px', cursor:'pointer'}}>JADESOLAADEAGBO</p>
+                    <p setHomeIsActive={setHomeIsActive}  style={{border:'1px solid white', color:'white', padding: '10px', cursor:'pointer'}}>JADESOLAADEAGBO</p>
                     <Hidden smDown>
                         <Menu homeIsActive={homeIsActive} />
                     </Hidden>
