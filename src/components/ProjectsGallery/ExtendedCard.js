@@ -9,8 +9,9 @@ import {
 } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 import { motion } from "framer-motion";
+import {codeList} from "../../data.js"
 
-const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, technologies, handleClose, ...rest }) => {
+const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, technologies,github, preview, handleClose, ...rest }) => {
     const classes = useStyles();
 
     return (
@@ -49,7 +50,7 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
                             >
                                 {overview}
                             </Typography>
-                            <Typography
+                            {/* <Typography
                                 variant="body1"
                                 className={classes.technologies}
                                 component={motion.h5}
@@ -57,7 +58,15 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
                                 color="primary"
                             >
                                 {technologies.join(" · ")}
-                            </Typography>
+                            </Typography> */}
+                            {/* <Typography
+                                variant="a"
+                                layoutId={`github-${id}`}
+                            >
+                                {github}
+                            </Typography> */}
+                            
+
                         </CardContent>
                     </div>
                     <IconButton className={classes.closeBtn} onClick={()=>handleClose()}>

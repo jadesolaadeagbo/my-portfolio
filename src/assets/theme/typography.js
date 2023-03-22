@@ -36,4 +36,8 @@ export default {
         fontWeight: 300,
         fontSize: 18,
     },
+    a:{
+        fontWeight: 300,
+        fontSize: 18,
+    }
 };
