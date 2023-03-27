@@ -6,12 +6,16 @@ import {
     CardMedia,
     Typography,
     IconButton,
+    Link
 } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 import { motion } from "framer-motion";
-import {codeList} from "../../data.js"
 
-const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, technologies,github, preview, handleClose, ...rest }) => {
+const github = [
+    {id:"1", thelink:"www.github.com"},
+    {id:"2", thelink:"www.github.com"},
+    {id:"3", thelink:"www.github.com"}];
+const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, technologies,github, link_preview, handleClose, ...rest }) => {
     const classes = useStyles();
 
     return (
@@ -50,7 +54,7 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
                             >
                                 {overview}
                             </Typography>
-                            {/* <Typography
+                            <Typography
                                 variant="body1"
                                 className={classes.technologies}
                                 component={motion.h5}
@@ -58,14 +62,15 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
                                 color="primary"
                             >
                                 {technologies.join(" · ")}
-                            </Typography> */}
+                            </Typography>
+     
                             {/* <Typography
-                                variant="a"
-                                layoutId={`github-${id}`}
+                                component = {Link}
+                                href={`${thelink}`}
+                                className={classes.links}
                             >
-                                {github}
+                                {id}
                             </Typography> */}
-                            
 
                         </CardContent>
                     </div>
@@ -158,6 +163,9 @@ const useStyles = makeStyles((theme) => ({
         margin:"2px",
         color:"white"
     },
+    links:{
+        cursor: "pointer",
+    }
 }));
 
 export default ExtendedCard;
