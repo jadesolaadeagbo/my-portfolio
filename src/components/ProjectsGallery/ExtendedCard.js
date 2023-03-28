@@ -65,7 +65,7 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
 
                             
 
-                <div className={classes.mobileWrapper}>
+                <div className={classes.previewlinks}>
                 <IconBtn icon={GitHub} m={1} href={`${github}`}/>
                 <Typography
                                 component = {Link}
@@ -124,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: `calc( ${theme.navbarHeight} + 20px )`,
         width: "90%",
         maxWidth: "600px",
-        height: "600px",
+        height: "650px",
         maxHeight:"80%",
         zIndex: "10000",
         boxShadow: theme.shadows[10],
@@ -136,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        overflow: "hidden",
+        overflow: "scroll",
     },
     frontImage: {
         marginTop: "20px",
@@ -170,7 +170,13 @@ const useStyles = makeStyles((theme) => ({
     },
     links:{
         cursor: "pointer",
+    },
+    previewlinks:{
+        display: "flex",
+        alignItems:"center",
+        gap: "30px",
     }
-}));
+}
+));
 
 export default ExtendedCard;
