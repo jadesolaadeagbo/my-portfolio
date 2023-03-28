@@ -48,6 +48,8 @@ const ProjectsGallery = () => {
                         backgroundImage={getSelected(selectedId).backgroundImage}
                         frontImage={getSelected(selectedId).frontImage}
                         technologies={getSelected(selectedId).technologies}
+                        github={getSelected(selectedId).github}
+                        live_preview={getSelected(selectedId).live_preview}
                         handleClose={() => setSelectedId(null)}
                     />
                 )}

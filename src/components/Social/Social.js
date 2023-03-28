@@ -5,7 +5,7 @@ import { LinkedIn, Instagram, GitHub, Email } from "@material-ui/icons";
 import IconBtn from "../IconBtn";
 import DarkModeSwitcher from "../DarkModeSwitcher";
 import loaderContext from "../../contexts/loaderContext";
-
+ 
 const Social = ({ mobile }) => {
     const classes = useStyles();
     const { isLoading } = useContext(loaderContext);

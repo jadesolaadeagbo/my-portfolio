@@ -10,14 +10,12 @@ import {
 } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 import { motion } from "framer-motion";
+import {GitHub} from "@material-ui/icons";
+import IconBtn from "../IconBtn";
 
-const github = [
-    {id:"1", thelink:"www.github.com"},
-    {id:"2", thelink:"www.github.com"},
-    {id:"3", thelink:"www.github.com"}];
-const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, technologies,github, link_preview, handleClose, ...rest }) => {
+
+const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, technologies,github, live_preview, handleClose, ...rest }) => {
     const classes = useStyles();
-
     return (
         <div className={classes.wrapper}>
             <MuiCard className={classes.root} elevation={0} component={motion.div} layoutId={id}>
@@ -54,7 +52,7 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
                             >
                                 {overview}
                             </Typography>
-                            <Typography
+                            {/* <Typography
                                 variant="body1"
                                 className={classes.technologies}
                                 component={motion.h5}
@@ -62,15 +60,22 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
                                 color="primary"
                             >
                                 {technologies.join(" · ")}
-                            </Typography>
-     
-                            {/* <Typography
+                            </Typography> */}
+
+
+                            
+
+                <div className={classes.mobileWrapper}>
+                <IconBtn icon={GitHub} m={1} href={`${github}`}/>
+                <Typography
                                 component = {Link}
-                                href={`${thelink}`}
+                                href={`${live_preview}`}
                                 className={classes.links}
                             >
-                                {id}
-                            </Typography> */}
+                                
+                                Live Preview
+                            </Typography>
+                </div>
 
                         </CardContent>
                     </div>

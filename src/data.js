@@ -7,6 +7,19 @@ const skillsList = [
     // { title: "Express JS ", value: 70 },
     // { title: "Firebase", value: 70 },
 ];
+const covid = "https://github.com/jadesolaadeagbo/covid19-Tracker";
+const covid_live = "https://covid-19-tracker-b3746.web.app/";
+const loruki = "https://github.com/jadesolaadeagbo/Loruki--"
+const loruki_live =" http://loruki-murex.vercel.app/"
+const spotify = "https://github.com/jadesolaadeagbo/spotify_clone"
+const spotify_live = "https://spotify-clone-phi.vercel.app"
+const votechain = "https://github.com/jadesolaadeagbo/Votechain"
+const votechain_live = "https://votechain.vercel.app/"
+const sample = "https://github.com/jadesolaadeagbo/sample-portfolio"
+const sample_live = "https://votechain.vercel.app/"
+
+
+
 const projectList = [
     {
         id: 1,
@@ -15,8 +28,8 @@ const projectList = [
         backgroundImage:
             "https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg",
         frontImage: "https://i.postimg.cc/SsZmn7Kg/covidtracker.png" ,
-        github:"https://github.com/jadesolaadeagbo/covid19-Tracker",
-        live_preview:"https://covid-19-tracker-b3746.web.app/"
+        github: covid,
+        live_preview: covid_live,
     },
     {
         id: 2,
@@ -25,8 +38,8 @@ const projectList = [
         backgroundImage:
             "https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?size=626&ext=jpg&ga=GA1.2.2102900112.1628985600",
         frontImage: "https://i.postimg.cc/2jqm50Mq/loruki.png",
-        github:"https://github.com/jadesolaadeagbo/Loruki--",
-        live_preview:"http://loruki-murex.vercel.app/"
+        github: loruki,
+        live_preview:loruki_live
     },
     {
         id: 3,
@@ -35,8 +48,8 @@ const projectList = [
         backgroundImage:
             "https://media.istockphoto.com/vectors/abstract-purple-vector-background-with-stripes-vector-id972475894?k=6&m=972475894&s=612x612&w=0&h=99AirGMOb64N2-1ZSMYRjEBp2USrAdzXUGzQMh5o6Js=",
         frontImage: "https://i.postimg.cc/Ls5LNv7N/spotify-clone.png",
-        github:"https://github.com/jadesolaadeagbo/spotify_clone",
-        live_preview:"https://spotify-clone-phi.vercel.app"
+        github:spotify,
+        live_preview:spotify_live
 
     },
     {
@@ -46,8 +59,8 @@ const projectList = [
         backgroundImage:
             "https://media.istockphoto.com/vectors/abstract-purple-vector-background-with-stripes-vector-id972475894?k=6&m=972475894&s=612x612&w=0&h=99AirGMOb64N2-1ZSMYRjEBp2USrAdzXUGzQMh5o6Js=",
         frontImage: "https://i.postimg.cc/zX9RQT8m/votechain.png",
-        github:"https://github.com/jadesolaadeagbo/Votechain",
-        live_preview:"https://votechain.vercel.app/"
+        github:votechain,
+        live_preview:votechain_live
     },
 
     {
@@ -56,8 +69,8 @@ const projectList = [
         technologies: ["Vue JS", "Node JS"],
         backgroundImage:"https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?size=626&ext=jpg&ga=GA1.2.2102900112.1628985600",
         frontImage: "https://i.postimg.cc/KvM1xD3p/sample.png",
-        github:"https://github.com/jadesolaadeagbo/sample-portfolio",
-        live_preview:"https://votechain.vercel.app/"
+        github:sample,
+        
     },
 
 ];
