@@ -3,6 +3,7 @@ const skillsList = [
     // { title: "Next js", value: 80 },
     { title: "Material UI", value: 80 },
     { title: "Styled components", value: 80 },
+    {title: "Vue JS", value:60},
     { title: "Node JS ", value: 60 },
     // { title: "Express JS ", value: 70 },
     // { title: "Firebase", value: 70 },
