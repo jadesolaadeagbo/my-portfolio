@@ -17,7 +17,7 @@ const spotify_live = "https://spotify-clone-phi.vercel.app"
 const votechain = "https://github.com/jadesolaadeagbo/Votechain"
 const votechain_live = "https://votechain.vercel.app/"
 const sample = "https://github.com/jadesolaadeagbo/sample-portfolio"
-const sample_live = "https://votechain.vercel.app/"
+const sample_live = "https://iykee.netlify.app"
 
 
 
@@ -71,6 +71,7 @@ const projectList = [
         backgroundImage:"https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?size=626&ext=jpg&ga=GA1.2.2102900112.1628985600",
         frontImage: "https://i.postimg.cc/KvM1xD3p/sample.png",
         github:sample,
+        live_preview:sample_live
         
     },
 
