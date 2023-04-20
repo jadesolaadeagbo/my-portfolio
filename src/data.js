@@ -5,8 +5,7 @@ const skillsList = [
     { title: "Styled components", value: 80 },
     {title: "Vue JS", value:60},
     { title: "Node JS ", value: 60 },
-    // { title: "Express JS ", value: 70 },
-    // { title: "Firebase", value: 70 },
+   
 ];
 const covid = "https://github.com/jadesolaadeagbo/covid19-Tracker";
 const covid_live = "https://covid-19-tracker-b3746.web.app/";
@@ -18,7 +17,8 @@ const votechain = "https://github.com/jadesolaadeagbo/Votechain"
 const votechain_live = "https://votechain.vercel.app/"
 const sample = "https://github.com/jadesolaadeagbo/sample-portfolio"
 const sample_live = "https://iykee.netlify.app"
-
+const shopnation = "https://github.com/jadesolaadeagbo/ShopNation-Ecommerce.git";
+const shopnation_live = "https://shopnation.netlify.app/"
 
 
 const projectList = [
@@ -73,6 +73,16 @@ const projectList = [
         github:sample,
         live_preview:sample_live
         
+    },
+      {
+        id: 6,
+        title: "ShopNation E-commerce",
+        technologies: ["Vue JS"],
+        backgroundImage:
+            "https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg",
+        frontImage: "https://i.postimg.cc/0NBDWVHx/shopnation.png" ,
+        github: shopnation,
+        live_preview: shopnation_live,
     },
 
 ];
