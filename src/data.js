@@ -18,7 +18,11 @@ const votechain_live = "https://votechain.vercel.app/"
 const sample = "https://github.com/jadesolaadeagbo/sample-portfolio"
 const sample_live = "https://iykee.netlify.app"
 const shopnation = "https://github.com/jadesolaadeagbo/ShopNation-Ecommerce.git";
-const shopnation_live = "https://shopnation.netlify.app/"
+const shopnation_live = "https://shopnation.netlify.app/";
+const netflixreact = "https://github.com/jadesolaadeagbo/Netflix-clone-with-ReactJs.git";
+const netflixreact_live="https://netflix-clone-rubies21.vercel.app/";
+const netflixvue ="https://github.com/jadesolaadeagbo/Netflix-clone-with-vueJs.git";
+const netflixvue_live="https://netflix-clone-with-vue-js.vercel.app/";
 
 
 const projectList = [
@@ -83,6 +87,26 @@ const projectList = [
         frontImage: "https://i.postimg.cc/0NBDWVHx/shopnation.png" ,
         github: shopnation,
         live_preview: shopnation_live,
+    },
+    {
+        id: 7,
+        title: "Netflix clone with React Js",
+        technologies: ["React JS"],
+        backgroundImage:
+            "https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg",
+        frontImage: "https://i.postimg.cc/J0m4qY2r/Screenshot-1587.png" ,
+        github: netflixreact,
+        live_preview: netflixreact_live,
+    },
+    {
+        id: 8,
+        title: "Netflix Clone with Vue Js",
+        technologies: ["Vue JS"],
+        backgroundImage:
+            "https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg",
+        frontImage: "https://i.postimg.cc/4dmYxLDT/Screenshot-1586.png" ,
+        github: netflixvue,
+        live_preview: netflixvue_live,
     },
 
 ];
