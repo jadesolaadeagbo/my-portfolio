@@ -72,7 +72,7 @@ const lightTheme = createTheme({
             main: "#6F4C5B",
             contrastText: "rgb(230,230,230)",
         },
-        text: {
+        text: { 
             primary: "#000",
             secondary: "rgb(30,30,30)",
         },
