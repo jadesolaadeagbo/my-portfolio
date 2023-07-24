@@ -107,7 +107,7 @@ const Card = ({ id, title, backgroundImage, frontImage, overview, technologies, 
                     animate={controls}
                 >
                     <Box mr={1}>
-                        <Typography variant="h4">View project </Typography>
+                    <Typography variant="h4" className={classes.view}>View project </Typography>
                     </Box>
                     <Icon
                         component={motion.div}
@@ -115,7 +115,7 @@ const Card = ({ id, title, backgroundImage, frontImage, overview, technologies, 
                         variants={{ hover: { y: 7 }, intial: { y: -2 } }}
                         animate="hover"
                     >
-                        <ArrowDownward />
+                        <ArrowDownward className={classes.arrow}/>
                     </Icon>
                 </Box>
             </motion.div>
@@ -167,11 +167,17 @@ const useStyles = makeStyles((theme) => ({
         top: 0,
         height: "100%",
         width: "100%",
-        backgroundColor: "rgba(0,0,0,0.97)",
+        backgroundColor: "rgba(0,0,0,0.50)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
     },
+    view:{
+        color: "#DEBA9D", 
+    },
+    arrow:{
+        color: "#DEBA9D",
+    }
 }));
 
 export default Card;
