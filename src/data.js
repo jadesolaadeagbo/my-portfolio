@@ -1,12 +1,10 @@
 const skillsList = [
     { title: "React JS", value: 75 },
-    // { title: "Next js", value: 80 },
+    {title: "Vue JS", value:60},
     { title: "Material UI", value: 80 },
     { title: "Styled components", value: 80 },
-    {title: "Vue JS", value:60},
+    {title: "TailwindCSS", value:90},
     { title: "Node JS ", value: 60 },
-    // { title: "Express JS ", value: 70 },
-    // { title: "Firebase", value: 70 },
 ];
 const covid = "https://github.com/jadesolaadeagbo/covid19-Tracker";
 const covid_live = "https://covid-19-tracker-b3746.web.app/";
@@ -24,7 +22,7 @@ const sample_live = "https://votechain.vercel.app/"
 const projectList = [
     {
         id: 1,
-        title: "Covid-19 Tracker",
+        title: "Gab Driver",
         technologies: ["HTML","CSS","React JS", "Node JS"],
         backgroundImage:
             "https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg",
@@ -34,6 +32,16 @@ const projectList = [
     },
     {
         id: 2,
+        title: "Covid-19 Tracker",
+        technologies: ["HTML","CSS","React JS", "Node JS"],
+        backgroundImage:
+            "https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg",
+        frontImage: "https://i.postimg.cc/SsZmn7Kg/covidtracker.png" ,
+        github: covid,
+        live_preview: covid_live,
+    },
+    {
+        id: 3,
         title: "Loruki Website",
         technologies: ["HTML", "CSS", "Material UI"],
         backgroundImage:
@@ -43,7 +51,7 @@ const projectList = [
         live_preview:loruki_live
     },
     {
-        id: 3,
+        id: 4,
         title: "Spotify Clone",
         technologies: ["React JS", "Node JS", ""],
         backgroundImage:
@@ -54,7 +62,7 @@ const projectList = [
 
     },
     {
-        id: 4,
+        id: 5,
         title: "Votechain App",
         technologies: ["Next JS", "Node JS", "Solidity"],
         backgroundImage:
@@ -65,7 +73,7 @@ const projectList = [
     },
 
     {
-        id: 5,
+        id: 6,
         title: "Sample portfolio app",
         technologies: ["Vue JS", "Node JS"],
         backgroundImage:"https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?size=626&ext=jpg&ga=GA1.2.2102900112.1628985600",
