@@ -56,7 +56,7 @@ const projectList = [
     {
         id: 3,
         title: "Covid-19 Tracker",
-        technologies: ["HTML","CSS","React JS", "Node JS"],
+        technologies: ["React JS", "Node JS"],
         backgroundImage:"https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg",
         frontImage: "https://i.postimg.cc/SsZmn7Kg/covidtracker.png" ,
         github: covid,
