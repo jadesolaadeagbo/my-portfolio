@@ -34,7 +34,7 @@ const Home = () => {
                     custom={0}
                     color="primary"
                     variant="h5"
-                    style={{ marginBottom: "0px" }}
+                    style={{ marginTop: "20px" }}
                 >
                     {t("home_welcome")}
                     <motion.div

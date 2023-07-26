@@ -93,10 +93,10 @@ const projectList = [
     },
     {
         id: 7,
-        title: "Sample portfolio app",
+        title: "Portfolio app",
         technologies: ["Vue JS", "Node JS"],
         backgroundImage:"https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?size=626&ext=jpg&ga=GA1.2.2102900112.1628985600",
-        frontImage: "https://i.postimg.cc/KvM1xD3p/sample.png",
+        frontImage: "https://i.postimg.cc/nzvdpRH7/Screenshot-1595.png",
         github:sample,
         live_preview: sample_live,
     

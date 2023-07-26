@@ -54,11 +54,10 @@ const Card = ({ id, title, backgroundImage, frontImage, overview, technologies, 
         >
             <div>
                 <CardMedia
-                    component={motion.div}
-                    layoutId={`img-container-${id}`}
-                    className={classes.media}
-                    image={backgroundImage}
-                    title={title}
+                            component={motion.div}
+                            layoutId={`img-container-${id}`}
+                            className={classes.media}
+                            title={title}
                 >
                     <motion.img
                         layoutId={`front-img-${id}`}
@@ -141,11 +140,11 @@ const useStyles = makeStyles((theme) => ({
         overflow: "hidden",
     },
     frontImage: {
-        marginTop: "20px",
+        marginTop: "15px",
         objectFit: "cover",
-        objectPosition: "center top",
+        objectPosition:"center",
         width: "90%",
-        boxShadow: theme.shadows[8],
+        borderRadius: "4px"
     },
     title: {
         fontSize: "20px",
@@ -173,10 +172,11 @@ const useStyles = makeStyles((theme) => ({
         alignItems: "center",
     },
     view:{
-        color: "#DEBA9D", 
+        color: theme.palette.background.default, 
     },
     arrow:{
-        color: "#DEBA9D",
+        color: theme.palette.background.default, 
+
     }
 }));
 

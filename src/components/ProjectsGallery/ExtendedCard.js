@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 import { motion } from "framer-motion";
-import {GitHub} from "@material-ui/icons";
+import {GitHub, Visibility} from "@material-ui/icons";
 import IconBtn from "../IconBtn";
 
 
@@ -25,7 +25,6 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
                             component={motion.div}
                             layoutId={`img-container-${id}`}
                             className={classes.media}
-                            image={backgroundImage}
                             title={title}
                         >
                             <motion.img
@@ -52,29 +51,12 @@ const ExtendedCard = ({ id, title, backgroundImage, frontImage, overview, techno
                             >
                                 {overview}
                             </Typography>
-                            {/* <Typography
-                                variant="body1"
-                                className={classes.technologies}
-                                component={motion.h5}
-                                layoutId={`technologies-${id}`}
-                                color="primary"
-                            >
-                                {technologies.join(" · ")}
-                            </Typography> */}
-
 
                             
 
                 <div className={classes.previewlinks}>
                 <IconBtn icon={GitHub} m={1} href={`${github}`}/>
-                <Typography
-                                component = {Link}
-                                href={`${live_preview}`}
-                                className={classes.links}
-                            >
-                                
-                                Live Preview
-                            </Typography>
+                <IconBtn icon={Visibility} m={1} href={`${live_preview}`}/>
                 </div>
 
                         </CardContent>
@@ -136,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        overflow: "scroll",
+        // overflow: "scroll",
     },
     frontImage: {
         marginTop: "20px",
@@ -149,12 +131,13 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "20px",
         fontWeight: 700,
         marginBottom: theme.spacing(1),
-        color:theme.palette.secondary.contrastText
+        color:theme.palette.primary.contrastText,
+        
     },
     overview: {
         fontSize: "14px",
         marginBottom: theme.spacing(1),
-        color:theme.palette.secondary.contrastText,
+        color:theme.palette.primary.contrastText,
         
     },
     technologies: {
@@ -174,7 +157,7 @@ const useStyles = makeStyles((theme) => ({
     previewlinks:{
         display: "flex",
         alignItems:"center",
-        gap: "30px",
+        gap: "0px",
     }
 }
 ));

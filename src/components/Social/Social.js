@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { makeStyles } from "@material-ui/core";
 import { motion, useAnimation } from "framer-motion";
+
 import { LinkedIn, Instagram, GitHub, Email } from "@material-ui/icons";
 import IconBtn from "../IconBtn";
 import DarkModeSwitcher from "../DarkModeSwitcher";

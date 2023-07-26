@@ -10,7 +10,7 @@ import ThemeContext from "./contexts/themeContext";
 import LoaderContext from "./contexts/loaderContext";  
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    // const [isDarkMode, setIsDarkMode] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
     return (
