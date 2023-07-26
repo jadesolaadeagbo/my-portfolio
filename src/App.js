@@ -18,7 +18,7 @@ function App() {
             <Suspense fallback={<div></div>}>
                 <ThemeContext.Provider>
                     <LoaderContext.Provider value={{ isLoading, setIsLoading }}>
-                        <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+                        <ThemeProvider theme={lightTheme}>
                             <CssBaseline />
                             <ScrollToTop />
                             <Routes />
