@@ -125,14 +125,14 @@ const Card = ({ id, title, backgroundImage, frontImage, overview, technologies, 
 const useStyles = makeStyles((theme) => ({
     root: {
         position: "relative",
-        height: 350,
+        height: 300,
         overflow: "hidden",
         cursor: "pointer",
         backgroundColor: theme.palette.primary.main,
     },
 
     media: {
-        height: 200,
+        height: 150,
         width: "100%",
         display: "flex",
         justifyContent: "center",

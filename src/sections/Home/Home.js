@@ -75,7 +75,7 @@ const Home = () => {
                     animate={controls}
                     custom={4}
                     variant="body1"
-                    color="initial"
+                    color="initial" 
                     style={{ marginBottom: "30px" }}
                 >
                     {t("home_location")}
