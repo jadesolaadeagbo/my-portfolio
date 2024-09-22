@@ -1,6 +1,6 @@
 import React from "react";
 import LoaderContainer from "../../containers/LoaderContainer";
-import Jadesola from "../../assets/Jádesólá..svg"
+import Jadesola from "../../assets/Jadesola.svg"
 
 const Loader = () => {
     return (

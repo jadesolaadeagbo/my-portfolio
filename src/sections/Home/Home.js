@@ -5,7 +5,6 @@ import { Link } from "react-scroll";
 import HomeContainer from "../../containers/HomeContainer";
 import VideoLogo from "../../components/VideoLogo";
 import { useTranslation } from "react-i18next";
-import Jadesola from "../../assets/Jádesólá..svg"
 import loaderContext from "../../contexts/loaderContext";
 
 const Home = () => {

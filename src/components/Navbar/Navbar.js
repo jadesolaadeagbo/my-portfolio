@@ -6,7 +6,7 @@ import Menu from "./Menu";
 import MobileMenu from "./MobileMenu";
 import HamburgerIcon from "./HamburgerIcon";
 import loaderContext from "../../contexts/loaderContext";
-import Jadesola from "../../assets/Jádesólá..svg"
+import Jadesola from "../../assets/Jadesola.svg"
 
 const Navbar = () => {
     const [homeIsActive, setHomeIsActive]=useState(true)
