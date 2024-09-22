@@ -12,7 +12,7 @@ const Footer = () => {
             <Box className={classes.footer}>
                 {isMobile && <Social mobile />}
                 <Typography variant="body2" color="initial">
-                    © 2023 Jadesola Adeagbo
+                    © 2024 Jadesola Adeagbo
                 </Typography>
             </Box>
         </Container>

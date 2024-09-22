@@ -6,11 +6,18 @@ const skillsList = [
     {title: "TypeScript", value:60},
     {title: "Solidity", value:60},
     {title: "Firebase", value:60},
+    {title: "Express JS", value:60},
+    {title: "Docker", value:60},
+    {title: "Git", value:60},
+    {title: "Github", value:60},
+    {title: "JQuery", value:60},
     {title: "Node JS", value:60},
     {title: "Bootstrap", value:60},
     { title: "TailwindCSS", value: 80 },
     { title: "Material UI", value: 80 },
     { title: "Styled components", value: 80 },
+    { title: "Ant Design", value: 80 },
+    { title: "Sass", value: 80 },
    
 ];
 const covid = "https://github.com/jadesolaadeagbo/covid19-Tracker";
@@ -129,6 +136,22 @@ const projectList = [
 const experienceList = [
     {
         id: 0,
+        company: "Quibble",
+        links: {
+            website: "https://quibblerm.io",
+
+        },
+    },
+    {
+        id: 1,
+        company: "Yuki",
+        links: {
+            website: "https://get-yuki.com",
+
+        },
+    },
+    {
+        id: 2,
         company: "EF Network Limited",
         links: {
             website: "https://www.eftechnology.net/about-us",
@@ -136,14 +159,14 @@ const experienceList = [
         },
     },
     {
-        id: 1,
+        id: 3,
         company: "Cyberroot International Limited",
         links: {
             website: "https://www.cyberrootltd.com/",
         },
     },
     {
-        id: 2,
+        id: 4,
         company: "HNG Internships",
         links: {
             website: "https://training.zuri.team",
@@ -151,7 +174,7 @@ const experienceList = [
         },
     },
     {
-        id: 3,
+        id: 5,
         company: "Zuri Internships",
         links: {
             website: "https://training.zuri.team",

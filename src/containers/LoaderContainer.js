@@ -16,7 +16,7 @@ const LoaderContainer = ({ children }) => {
             }}
             transition={{
                 delay:4.2,
-                duration:0.3
+                duration:0
             }}
             onAnimationComplete={definition => {
                 setIsLoading(false)

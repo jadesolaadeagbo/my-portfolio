@@ -62,21 +62,20 @@ const darkTheme = createTheme({
 const lightTheme = createTheme({
     palette: {
         background: {
-            // default: "rgb(222,186,157)",
-            default:  "rgb(227, 197, 187)"  //"#e3c5bb" 
+            default:  "#46A897" 
 
         },
         primary: {
-            main: "#9E7777",
+            main: "#F7F7F8",
             contrastText: "#000",
         },
         secondary: {
-            main: "#6F4C5B",
+            main: "#F7F7F8",
             contrastText: "rgb(230,230,230)",
         },
         text: {
-            primary: "#764248",
-            secondary: "rgb(30,30,30)",
+            primary: "#fff",
+            secondary: "rgb(30,30,30)"
         },
         action: {
             disabled: "rgb(70,70,70)",

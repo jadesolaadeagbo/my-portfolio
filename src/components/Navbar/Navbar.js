@@ -6,6 +6,7 @@ import Menu from "./Menu";
 import MobileMenu from "./MobileMenu";
 import HamburgerIcon from "./HamburgerIcon";
 import loaderContext from "../../contexts/loaderContext";
+import Jadesola from "../../assets/Jádesólá..svg"
 
 const Navbar = () => {
     const [homeIsActive, setHomeIsActive]=useState(true)
@@ -57,7 +58,7 @@ const Navbar = () => {
                     }}
                 >
 
-                    <p setHomeIsActive={setHomeIsActive}  style={{border:'1px solid white', color:'white', padding: '10px', cursor:'pointer'}}>JADESOLA ADEAGBO</p>
+                    <img setHomeIsActive={setHomeIsActive}  src={Jadesola}/>
                     <Hidden smDown>
                         <Menu homeIsActive={homeIsActive} />
                     </Hidden>

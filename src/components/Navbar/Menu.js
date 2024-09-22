@@ -145,8 +145,12 @@ const StyledTab = withStyles((theme) => ({
     root: {
         transition: ".2s",
         minWidth: 120,
+        color:theme.palette.text.primary,
+        fontWeight: 400,
         "&:hover": {
             color: theme.palette.text.primary,
+            fontSize: 20,
+            cursor: "pointer"
         },
     },
 }))((props) => <Tab disableRipple {...props} />);

@@ -1,11 +1,11 @@
 import React from "react";
 import LoaderContainer from "../../containers/LoaderContainer";
-import Mehdi from "../../assets/images/Mehdi";
+import Jadesola from "../../assets/Jádesólá..svg"
 
 const Loader = () => {
     return (
         <LoaderContainer>
-            <h1 style={{color:"white", border:'1px solid white', padding: '10px',}}>JADESOLA ADEAGBO</h1>
+            <img src={Jadesola} width="200px"/>
         </LoaderContainer>
         
     ); 

@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
-import AvatarImg from "../../assets/images/developer.png"; 
+import AvatarImg from "../../assets/images/Avatar.jpg"; 
 
 const Avatar = () => {
   const classes = useStyles();
@@ -11,9 +11,9 @@ const Avatar = () => {
 
 const useStyles = makeStyles((theme) => ({
   avatarImg: {
-    // borderRadius:'50%',
+    borderRadius:'50%',
     width:"400px",
-    // height:"270px",
+    height:"400px",
     objectFit:'cover',
   },
 }));

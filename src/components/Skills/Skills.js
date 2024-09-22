@@ -20,24 +20,22 @@ function LinearProgressWithLabel({ title, value }) {
 }
 
 const Skills = () => {
-    const classes = useStyles();
-    const theme = useTheme();
+    const classes = useStyles(); 
     return (
         <div className={classes.container}>
             {skillsList.map((elem, k) => (
                 <Paper elevation={10} key={k} className={classes.paper}>
-                    <Typography align="center" >{elem.title}</Typography>
+                    <Typography align="center">{elem.title}</Typography>
                 </Paper>
             ))}
         </div>
     );
 };
-
 const useStyles = makeStyles((theme) => ({
     container: {
         maxWidth: "600px",
         display: "flex",
-        flexWrap:"wrap"
+        flexWrap: "wrap",
     },
     skillWrapper: {
         width: "100%",
@@ -46,12 +44,14 @@ const useStyles = makeStyles((theme) => ({
         whiteSpace: "nowrap",
         marginRight: theme.spacing(1),
     },
-    paper:{
-        marginRight:"10px",
-        marginBottom:"10px",
-        minWidth:"50px",
-        padding:"10px"
-    }
+    paper: {
+        marginRight: "10px",
+        marginBottom: "10px",
+        minWidth: "50px",
+        padding: "10px",
+        color: theme.palette.background.default,
+    },
 }));
+
 
 export default Skills;

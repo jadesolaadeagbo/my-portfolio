@@ -1,32 +1,32 @@
 // eslint-disable-next-line
 export default {
-    fontFamily: ["Cairo", "Roboto", '"Helvetica Neue"', "sans-serif"].join(","),
+    fontFamily: ["Roboto", '"Helvetica Neue"', "sans-serif"].join(","),
     h1: {
         fontWeight: 500,
         fontSize: 60,
     },
     h2: {
-        fontWeight: 500,
+        fontWeight: 400,
         fontSize: 50,
     },
     h3: {
-        fontWeight: 500,
+        fontWeight: 300,
         fontSize: 40,
     },
     h4: {
-        fontWeight: 500,
+        fontWeight: 300,
         fontSize: 30,
     },
     h5: {
-        fontWeight: 500,
+        fontWeight: 300,
         fontSize: 25,
     },
     h6: {
-        fontWeight: 500,
+        fontWeight: 300,
         fontSize: 20,
     },
     overline: {
-        fontWeight: 500,
+        fontWeight: 300,
     },
     body1: {
         fontWeight: 300,
@@ -37,7 +37,7 @@ export default {
         fontSize: 18,
     },
     a:{
-        fontWeight: 300,
+        fontWeight: 100,
         fontSize: 18,
     }
 };

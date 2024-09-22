@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { makeStyles, Menu, MenuItem, Button } from "@material-ui/core";
 import { KeyboardArrowDownSharp } from "@material-ui/icons";
@@ -9,21 +7,27 @@ import "flag-icon-css/css/flag-icon.min.css";
 
 const languages = [
     {
-        code: "fr",
-        name: "FR",
-        country_code: "fr",
-    },
-    {
         code: "en",
         name: "EN",
         country_code: "gb",
     },
+    {
+        code: "fr",
+        name: "FR",
+        country_code: "fr",
+    },
+
 ];
 
 const LangSelector = (props) => {
     const classes = useStyles();
     const { t } = useTranslation();
     const [anchorEl, setAnchorEl] = useState(null);
+    
+    // Get the current active language
+    const currentLanguageCode = i18n.language;
+    const currentLanguage = languages.find((elem) => elem.code === currentLanguageCode);
+
     const handleClose = (code) => {
         i18n.changeLanguage(code);
         setAnchorEl(null);
@@ -31,8 +35,6 @@ const LangSelector = (props) => {
             props.onClose();
         }
     };
-
-    const currentLanguage = languages.find((elem) => elem.code === t("language"));
 
     return (
         <div {...props}>
@@ -43,7 +45,7 @@ const LangSelector = (props) => {
                         {currentLanguage.name}
                     </>
                 )}
-                <KeyboardArrowDownSharp style={{ color: "white" }} />
+                <KeyboardArrowDownSharp  />
             </Button>
             <Menu
                 id="profile-menu"
@@ -64,14 +66,17 @@ const LangSelector = (props) => {
                 className={classes.profileMenu}
                 disableScrollLock
             >
-                <MenuItem className={classes.menuItem} onClick={() => handleClose("en")}>
-                    <span className={`flag-icon flag-icon-gb ${classes.flagIcon}`} />
-                    EN
-                </MenuItem>
-                <MenuItem className={classes.menuItem} onClick={() => handleClose("fr")}>
-                    <span className={`flag-icon flag-icon-fr ${classes.flagIcon}`} />
-                    FR
-                </MenuItem>
+                {languages.map((lang) => (
+                    <MenuItem
+                        key={lang.code}
+                        className={classes.menuItem}
+                        onClick={() => handleClose(lang.code)}
+                        selected={lang.code === currentLanguageCode}  // Add selected prop based on current language
+                    >
+                        <span className={`flag-icon flag-icon-${lang.country_code} ${classes.flagIcon}`} />
+                        {lang.name}
+                    </MenuItem>
+                ))}
             </Menu>
         </div>
     );
@@ -86,8 +91,14 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     menuItem: {
+        color: "black",
+        fontWeight: "400",
         "&:hover": {
             backgroundColor: theme.backgroundSecondary,
+        },
+        "&.Mui-selected": {
+            backgroundColor: theme.backgroundSecondary,
+            fontWeight: "700",
         },
     },
     flagIcon: {

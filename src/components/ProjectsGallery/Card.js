@@ -172,10 +172,12 @@ const useStyles = makeStyles((theme) => ({
         alignItems: "center",
     },
     view:{
-        color: theme.palette.background.default, 
+        color: theme.palette.text.primary, 
+        fontWeight: 400,
+
     },
     arrow:{
-        color: theme.palette.background.default, 
+        color: theme.palette.text.primary, 
 
     }
 }));
