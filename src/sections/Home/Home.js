@@ -19,7 +19,7 @@ const Home = () => {
             controls.start((i) => ({
                 y: 0,
                 opacity: 1,
-                transition: { delay: i * 0.1 + 1.6 },
+                transition: { delay: i * 0.1 + 1.2 },
             }));
         } else {
             controls.start({ opacity: 0, y: 5 });
