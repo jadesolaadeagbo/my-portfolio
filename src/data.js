@@ -5,7 +5,6 @@ const skillsList = [
     {title: "JavaScript", value:60},
     {title: "TypeScript", value:60},
     {title: "Solidity", value:60},
-    {title: "Firebase", value:60},
     {title: "Express JS", value:60},
     {title: "Docker", value:60},
     {title: "Git", value:60},
@@ -18,6 +17,8 @@ const skillsList = [
     { title: "Styled components", value: 80 },
     { title: "Ant Design", value: 80 },
     { title: "Sass", value: 80 },
+    { title: "Strapi", value: 80 },
+    { title: "Shopify", value: 80 },
    
 ];
 const covid = "https://github.com/jadesolaadeagbo/covid19-Tracker";
