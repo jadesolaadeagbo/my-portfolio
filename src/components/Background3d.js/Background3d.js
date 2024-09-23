@@ -8,22 +8,25 @@ const Background3d = () => {
     const { isLoading } = useContext(loaderContext);
     const controls = useAnimation();
 
+    const handleIframeLoad = () => {
+        controls.start({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: 3,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+            },
+        });
+    };
+
     useEffect(() => {
-        if (!isLoading) {
-            controls.start({
-                y: 0,
-                opacity: 1,
-                transition: {
-                    delay: 3,
-                    type: "spring",
-                    stiffness: 260,
-                    damping: 20,
-                },
-            });
-        } else {
+        if (isLoading) {
             controls.start({ opacity: 0, y: -50 });
         }
     }, [isLoading, controls]);
+
 
     return (
         <motion.div animate={controls} className={classes.wrapper}>
@@ -33,6 +36,7 @@ const Background3d = () => {
                     src="https://my.spline.design/awesomefolio-0c39efc3de701ba97be395cc128e4e2f/"
                     frameBorder="0"
                     height="100%"
+                    onLoad={handleIframeLoad}
                     className={classes.iframe}
                 ></iframe>
                 <div className={classes.hideLogo} />
